@@ -2,9 +2,9 @@
   "name": "webscrapapp",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gridsome build",
+    "develop": "NODE_OPTIONS=--openssl-legacy-provider gridsome develop",
+    "explore": "NODE_OPTIONS=--openssl-legacy-provider gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.7.0",

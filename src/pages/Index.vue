@@ -1,33 +1,45 @@
 <template>
   <Layout>
+    <v-card class="mx-auto" max-width="400">
+      <v-img
+        class="white--text align-end"
+        height="200px"
+        src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      >
+        <v-card-title>{{ data }}</v-card-title>
+      </v-img>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+      <v-card-subtitle class="pb-0">
+        Number 10
+      </v-card-subtitle>
 
-    <h1>Hello, world!</h1>
+      <v-card-text class="text--primary">
+        <div>Whitehaven Beach</div>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+        <div>Whitsunday Island, Whitsunday Islands</div>
+      </v-card-text>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+      <v-card-actions>
+        <v-btn color="orange" text>
+          Share
+        </v-btn>
 
+        <v-btn color="orange" text>
+          Explore
+        </v-btn>
+      </v-card-actions>
+    </v-card>
   </Layout>
 </template>
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Hello, world!'
+  data() {
+    return {
+      data: 's'
+    };
   }
-}
+};
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+<style></style>

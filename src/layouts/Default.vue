@@ -1,11 +1,17 @@
 <template>
-<v-container>
-      <v-app-bar color="blue" dense elevation="1" rounded>
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </v-app-bar>
-    <slot/>
-  </v-container>
+  <v-app>
+    <v-app-bar color="teal lighten-3" dense elevation="1" rounded app>
+      <v-app-bar-nav-icon />
+      <v-app-bar-title
+        ><g-link to="/" class="text-decoration-none"><span></span></g-link
+      ></v-app-bar-title>
+      <v-spacer />
+      <g-link to="/all" class="text-decoration-none"
+        ><v-btn color="accent" elevation="4">All</v-btn>
+      </g-link>
+    </v-app-bar>
+    <slot />
+  </v-app>
 </template>
 
 <static-query>
@@ -15,5 +21,3 @@ query {
   }
 }
 </static-query>
-
-
